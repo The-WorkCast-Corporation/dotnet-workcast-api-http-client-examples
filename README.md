@@ -6,23 +6,20 @@
 dotnet new console -n repapi-clienthttp
 ```
 
-## Building
-
-### Windows 10/11
-
-```shell
-.\clean-build.ps1
-```
-
-### Linux & Mac OS
-
-```shell
-./clean-build.sh
-```
-
 ---
 
-## .NET/Core Versions
+## Background
+
+### Installing versions of .NET & .NETCore
+
+- For Windows
+  - <https://learn.microsoft.com/en-us/dotnet/core/install/windows?tabs=net80>
+- For Linux (Ubuntu)
+  -  <https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-install>
+- For Mac OS
+  - <https://learn.microsoft.com/en-us/dotnet/core/install/macos>
+
+### .NET/Core Versions
 
 There is a `global.json`, which dictates which version of dotnet SDK to build with and what C# language to be build to.
 
@@ -89,6 +86,22 @@ dotnet --version
 
 > **Important:** Once you have changed your `global.json` contents always re-run the `.\clean-build.ps1` script.
 > **Important:** .NetCore `<3.1` are obsolete and out of support by Microsoft and have high vulnerabilities, so examples are not shown here.
+
+---
+
+## Building
+
+### Windows 10/11
+
+```shell
+.\clean-build.ps1
+```
+
+### Linux & Mac OS
+
+```shell
+./clean-build.sh
+```
 
 ---
 
