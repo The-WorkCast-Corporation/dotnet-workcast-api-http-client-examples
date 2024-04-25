@@ -10,6 +10,46 @@ dotnet new console -n repapi-clienthttp
 .\clean-build.ps1
 ```
 
+## .NET/Core Versions
+
+There is a `global.json`, which dictates which version of dotnet SDK to build with and what C# language to be build to.
+
+To discover what version you currently have perform the following command:-
+
+```sh
+dotnet --version
+8.0.202
+```
+
+To discover what versions of the .NET SDK you currently have installed on your machine perform the following command:-
+
+```sh
+dotnet --list-sdks
+2.1.813 [C:\Program Files\dotnet\sdk]
+3.1.410 [C:\Program Files\dotnet\sdk]
+5.0.416 [C:\Program Files\dotnet\sdk]
+6.0.201 [C:\Program Files\dotnet\sdk]
+6.0.300 [C:\Program Files\dotnet\sdk]
+8.0.202 [C:\Program Files\dotnet\sdk]
+```
+
+For which version of language you can use with each .NET SDK version use the following documentation guide:-
+
+<https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version>
+
+You can then change the contents of the `global.json` to your requirements:-
+
+```json
+{
+  "sdk": {
+    "version": "8.0.202"
+  },
+  "langversion": "12"
+}
+```
+
+> **Important:** Once you have changed your `global.json` contents always re-run the `.\clean-build.ps1` script.
+
 ---
 
 ## Standard Usage
