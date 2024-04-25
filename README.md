@@ -1,14 +1,26 @@
 # wc- rest-api http client example
 
+## This repo was created using
+
+```shell
+dotnet new console -n repapi-clienthttp
+```
+
 ## Building
 
-```powershell
+### Windows 10/11
 
-
-dotnet new console -n repapi-clienthttp
-
+```shell
 .\clean-build.ps1
 ```
+
+### Linux & Mac OS
+
+```shell
+./clean-build.sh
+```
+
+---
 
 ## .NET/Core Versions
 
