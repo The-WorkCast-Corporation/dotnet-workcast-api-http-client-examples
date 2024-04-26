@@ -32,7 +32,6 @@ class Program
         var response = await client.SendAsync(request);
 
         // Check if response is a redirect
-        // Check if response is a redirect
         if ((int)response.StatusCode >= 300 && (int)response.StatusCode < 400)
         {
             // Check if the Location header is present

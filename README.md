@@ -1,4 +1,4 @@
-# wc- rest-api http client example
+# WorkCast REST API HTTP client example
 
 ## This repo was created using
 
@@ -85,7 +85,7 @@ dotnet --version
 ```
 
 > **Important:** Once you have changed your `global.json` contents always re-run the `.\clean-build.ps1` script.
-> **Important:** .NetCore `<3.1` are obsolete and out of support by Microsoft and have high vulnerabilities, so examples are not shown here.
+> **Important:** .NetCore `<3.1` are obsolete and out of support by Microsoft and have high vulnerabilities, so examples are not shown here as they do not function correctly.
 
 ---
 
@@ -128,7 +128,7 @@ returnedBearerToken `
 > .\output\non-paging-response.json
 ```
 
-### None-Paging Response
+### Non Paging Response
 
 ```json
 {
@@ -274,6 +274,9 @@ returnedBearerToken `
   "message": "Ok"
 }
 ```
+
+> **Important:** You can use the `"previous"` and `"next"` urls above to navigate around the data.
+
 
 ---
 
